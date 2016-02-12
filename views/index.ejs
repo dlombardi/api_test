@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Angular HTTP proxy test</title>
+</head>
+<body ng-app="test">
+  <form ng-controller="MainController">
+    <div>
+      <label for="username">username:</label>
+      <input type="text" ng-model="user.username">
+    </div>
+    <div>
+      <label for="password">password:</label>
+      <input type="text" ng-model="user.password">
+    </div>
+    <div>
+      <button class="submit" ng-click="submit(user)">Submit</button>
+    </div>
+  </form>
+
+  <script src="/vendor/angular/angular.min.js"></script>
+  <script src="/js/all.js"></script>
+</body>
+</html>
